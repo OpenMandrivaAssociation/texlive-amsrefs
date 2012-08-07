@@ -1,12 +1,12 @@
-# revision 23391
+# revision 26387
 # category Package
 # catalog-ctan /macros/latex/contrib/amsrefs
-# catalog-date 2010-08-30 01:29:40 +0200
+# catalog-date 2012-05-09 12:23:21 +0200
 # catalog-license lppl1.3
 # catalog-version 2.09
 Name:		texlive-amsrefs
 Version:	2.09
-Release:	2
+Release:	3
 Summary:	A LaTeX-based replacement for BibTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/amsrefs
@@ -71,6 +71,7 @@ a replacement for BibTeX.
 %doc %{_texmfdistdir}/doc/latex/amsrefs/textcmds.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/amsrefs/00readme.txt
+%doc %{_texmfdistdir}/source/latex/amsrefs/README
 %doc %{_texmfdistdir}/source/latex/amsrefs/amsrdoc.tex
 %doc %{_texmfdistdir}/source/latex/amsrefs/amsrefs.dtx
 %doc %{_texmfdistdir}/source/latex/amsrefs/amsrefs.ins
