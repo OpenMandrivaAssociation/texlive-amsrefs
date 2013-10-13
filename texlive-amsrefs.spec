@@ -1,12 +1,12 @@
-# revision 26387
+# revision 30646
 # category Package
 # catalog-ctan /macros/latex/contrib/amsrefs
-# catalog-date 2012-05-09 12:23:21 +0200
+# catalog-date 2013-03-09 15:08:10 +0100
 # catalog-license lppl1.3
-# catalog-version 2.09
+# catalog-version 2.14
 Name:		texlive-amsrefs
-Version:	2.09
-Release:	3
+Version:	2.14
+Release:	1
 Summary:	A LaTeX-based replacement for BibTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/amsrefs
@@ -54,13 +54,9 @@ a replacement for BibTeX.
 %doc %{_texmfdistdir}/doc/latex/amsrefs/amsrefs.pdf
 %doc %{_texmfdistdir}/doc/latex/amsrefs/amsxport.pdf
 %doc %{_texmfdistdir}/doc/latex/amsrefs/changes.pdf
-%doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xa.pdf
 %doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xa.tex
-%doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xb.pdf
 %doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xb.tex
-%doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xh.pdf
 %doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xh.tex
-%doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xs.pdf
 %doc %{_texmfdistdir}/doc/latex/amsrefs/cite-xs.tex
 %doc %{_texmfdistdir}/doc/latex/amsrefs/gktest.ltb
 %doc %{_texmfdistdir}/doc/latex/amsrefs/ifoption.pdf
@@ -70,7 +66,6 @@ a replacement for BibTeX.
 %doc %{_texmfdistdir}/doc/latex/amsrefs/rkeyval.pdf
 %doc %{_texmfdistdir}/doc/latex/amsrefs/textcmds.pdf
 #- source
-%doc %{_texmfdistdir}/source/latex/amsrefs/00readme.txt
 %doc %{_texmfdistdir}/source/latex/amsrefs/README
 %doc %{_texmfdistdir}/source/latex/amsrefs/amsrdoc.tex
 %doc %{_texmfdistdir}/source/latex/amsrefs/amsrefs.dtx
@@ -100,22 +95,3 @@ a replacement for BibTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.09-3
-+ Revision: 811961
-- Update to latest release.
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.09-2
-+ Revision: 749245
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.09-1
-+ Revision: 717827
-- texlive-amsrefs
-- texlive-amsrefs
-- texlive-amsrefs
-- texlive-amsrefs
-- texlive-amsrefs
-
