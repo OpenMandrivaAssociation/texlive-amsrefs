@@ -6,7 +6,7 @@
 # catalog-version 2.14
 Name:		texlive-amsrefs
 Version:	2.14
-Release:	3
+Release:	4
 Summary:	A LaTeX-based replacement for BibTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/amsrefs
