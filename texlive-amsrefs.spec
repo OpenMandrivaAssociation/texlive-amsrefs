@@ -1,19 +1,13 @@
-# revision 30646
-# category Package
-# catalog-ctan /macros/latex/contrib/amsrefs
-# catalog-date 2013-03-09 15:08:10 +0100
-# catalog-license lppl1.3
-# catalog-version 2.14
 Name:		texlive-amsrefs
-Version:	2.14
-Release:	10
+Version:	61937
+Release:	1
 Summary:	A LaTeX-based replacement for BibTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/amsrefs
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amsrefs.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amsrefs.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amsrefs.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amsrefs.r61937.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amsrefs.doc.r61937.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amsrefs.source.r61937.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ The package can be used either in conjunction with BibTeX or as
 a replacement for BibTeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -88,7 +82,8 @@ a replacement for BibTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
