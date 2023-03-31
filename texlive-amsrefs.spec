@@ -1,6 +1,6 @@
 Name:		texlive-amsrefs
 Version:	61937
-Release:	1
+Release:	2
 Summary:	A LaTeX-based replacement for BibTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/amsrefs
